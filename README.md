@@ -27,6 +27,6 @@ elboytm.github.io/Phoebe-s-Flowers/
 
 # Credits
 
-1.https://github.com/MichaelaHunt\
-2.https://github.com/ElBoyTM\
+1.https://github.com/MichaelaHunt \
+2.https://github.com/ElBoyTM \
 3.https://github.com/bezaosu
