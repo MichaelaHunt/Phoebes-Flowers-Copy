@@ -1,0 +1,317 @@
+:root {
+    --header-blue: #6689A1;
+    --mini-pink: #ffbbbb;
+    --best-peach: #FFDABC;
+    --gifts-green: #E9EBC6;
+}
+
+@font-face {
+    font-family: "DeliusSwashCaps";
+    src: url("../fonts/DeliusSwashCaps-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url("../fonts/Poppins-Regular.ttf");
+}
+@font-face {
+    font-family: "Poppins-Light";
+    src: url("../fonts/Poppins-Light.ttf");
+}
+
+/* Semantic */
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+section {
+    margin: 40px 0 0 0;
+}
+
+button {
+    border: none;
+}
+
+h1 {
+    color: white;
+    font-family: "DeliusSwashCaps";
+    font-size: 64px;
+    margin: 24px, auto, 0, auto;
+    margin-bottom: 0;
+    margin-left: 35px;
+}
+
+/* Classes */
+.best-item {
+    margin: 30px;
+}
+
+.best-item>img {
+    height: 25rem;
+    margin: 0 0 24px 0;
+}
+
+.section-title {
+    padding: 0 0 40px 0;
+    color: black;
+    font-size: 40px;
+}
+
+#gifts-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 50px;
+    justify-content: center;
+}
+
+.gifts-item {
+    margin: 0 30px 40px;
+}
+
+.gifts-item>img {
+    width: 25rem;
+    margin: 0 0 24px 0;
+}
+
+/* Ids */
+#row {
+    display: flex;
+    justify-content: center;
+}
+
+.best-item {
+    margin: 30px;
+    position: relative;
+}
+
+#gifts-section {
+    background-color: var(--gifts-green);
+    padding: 40px 0;
+}
+
+/* NEW 💩 */
+header {
+    background-color: #6689A1;
+    height: 128px;
+    position: relative;
+    border-bottom: 4px solid #62849B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cartButton {
+    background-color: var(--header-blue);
+    width: 35px;
+    position: absolute;
+    line-height: normal;
+    top: 44px;
+    right: 40px;
+}
+
+i {
+    color: white;
+    font-size: 32px;
+}
+
+nav {
+    background-color: var(--header-blue);
+}
+
+nav > ul {
+    color: white;
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    font-family: "Poppins-Regular";
+    font-size: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+}
+
+.dropdown-toggle {
+    background-color: var(--header-blue);
+    color: white;
+}
+
+#mini-bouquets {
+    background-color: var(--mini-pink);
+    display: flex;
+    display: row;
+}
+
+#best-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#best-section {
+    background-color: var(--best-peach);
+    padding: 40px 0;
+}
+
+aside > img {
+    border: thick solid white;
+}
+
+#mug1, #mug3 {
+    width: 21%;
+    object-fit: cover;
+    margin-top: -2rem;
+}
+
+#mug2 {
+    width: 37%;
+    object-fit: cover;
+    border-radius: 60px 60px 0 0;
+    margin: 0 3.5rem -2rem;
+    
+}
+
+#mug1 {
+    border-radius: 0 0 60px 0;
+}
+
+#mug3 {
+    border-radius: 0 0 0 60px;
+}
+
+#mini-bouquets > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 44rem;
+    font-size: 32px;
+    padding: 2rem;
+}
+
+aside {
+    width: 100%;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.index-button {
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 16px;
+    font-family: "Poppins-Regular";
+    font-size: 24px;
+}
+
+#newLabel {
+    color: #E57E7E;
+    font-family: "DeliusSwashCaps";
+    font-size: 60px;
+    rotate: -13deg;
+}
+
+.gifts-item {
+    margin: 0 50px 40px;
+    position: relative;
+}
+
+.gifts-item > img {
+    width: 300px;
+}
+
+.imgbutton {
+    display: none;
+    background-color: #A7A7A7;
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    justify-content: center;
+    bottom: 104px;
+    right: 6px;
+    color: #f6f6f6;
+    text-decoration: none;
+    font-size: 50px;
+    line-height: 100%;
+}
+
+.btnimg:hover + .imgbutton, .imgbutton:hover {
+    display: inline-flex;
+}
+
+#miniLabel {
+    font-size: 36px;
+    font-family: "Poppins-Light";
+    padding: 1.5rem 0;
+}
+
+#mini-button {
+    background-color: #426A5A;
+}
+
+#gifts-button {
+    background-color: #402E2A;
+}
+
+#best-button {
+    background-color: #E58673;
+}
+
+.white {
+    border: 6px solid white;
+}
+
+.dropdown-menu {
+    background-color: white;
+    border: 0;
+}
+
+.dropdown-menu > li {
+    padding: 0 0 0 16px;
+}
+
+li > a {
+    text-decoration: none;
+    color: var(--header-blue);
+}
+
+@media screen and (max-width: 1040px){
+    #mug1, #mug3 {
+        display: none;
+    }
+    #mug2 {
+        margin: 0;
+        width: 60%;
+    }
+    aside {
+        padding: 32px;
+    }
+
+}
+
+@media screen and (max-width: 927px) {
+    #mug2 {
+        display: none;
+    }
+
+    aside {
+        width: 0px;
+        padding: 0;
+        margin: 0;
+    }
+
+    #mini-bouquets > div {
+        width: 100%;
+    }
+
+    nav {
+        height: 125px;
+    }
+
+    nav > ul {
+        flex-direction: column;
+    }
+}

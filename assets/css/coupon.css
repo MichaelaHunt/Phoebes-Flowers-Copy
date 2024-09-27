@@ -1,0 +1,95 @@
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url("../fonts/Poppins-Regular.ttf");
+}
+
+:root{
+    --color-gray: #8A8A8A;
+    --color-light-gray:#A7A7A7;
+    --color-pink: #E58673;
+    --color-yellow: #FFDABC;
+    --color-white: white;
+
+    --font-regular: 'Poppins-Regular'
+}
+* {
+    margin: 0;
+}
+
+/* Classes */
+.coupon-h1 {
+    color: var(--color-pink);
+    font-size: 96px;
+    margin-bottom: 16px;
+    line-height: 0.8;
+}
+
+.coupon-h2 {
+    color: var(--color-gray);
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+/* Ids */
+#coupon-main {
+    background-color: var(--color-yellow);
+    background-image: url("../images/flowers-warm.png");
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    font-family: var(--font-regular);
+    padding: 40px;
+}
+
+#box {
+    background-color: var(--color-white);
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px;
+    border: 15px solid #E58673;
+    width: 625px;
+}
+
+input,
+#join {
+    margin: 0 auto;
+}
+
+input,
+#join,
+#closeCouponModal {
+    display: block;
+}
+
+#join {
+    width: 515px;
+    height: 60px;
+    background-color: var(--color-pink);
+    color: var(--color-white);
+    font-size: 24px;
+    border: 0;
+    margin-bottom: 8px;
+}
+
+#closeCouponButton {
+    color: var(--color-light-gray);
+    font-size: 16px;
+    background-color: var(--color-white);
+    border: 0;
+}
+
+input {
+    border: 2px solid var(--color-gray);
+    width: 515px;
+    height: 60px;
+    font-size: 35px;
+    margin-bottom: 32px;
+    padding: 0 0 0 16px;
+}
+
+::placeholder {
+    color: var(--color-light-gray);
+    font-size: 32px;
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Phoebe's Flowers</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./assets/css/uni.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body id="index-body">
+    <!-- Header -->
+    <header>
+        <h1>Phoebe's Flowers</h1>
+        <button type="button" id="cartButton" onclick="showCartModal()">
+            <i class="bi bi-basket3-fill"></i>
+        </button>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <div class="dropdown">
+                    <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Occasions
+                    </button>
+                    <ul class="dropdown-menu shadow">
+                        <li><a href="#">Wedding</a></li>
+                        <li><a href="#">Get Well</a></li>
+                        <li><a href="#">Condolences</a></li>
+                        <li><a href="#">Romance</a></li>
+                        <li><a href="#">Birthday</a></li>
+                        <li><a href="#">Congratulations</a></li>
+                        <li><a href="#">Thank You</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Browse Extras
+                    </button>
+                    <ul class="dropdown-menu shadow">
+                        <li><a href="#">Cards</a></li>
+                        <li><a href="#">Gifts</a></li>
+                        <li><a href="#">Vases</a></li>
+                        <li><a href="#">Ribbons</a></li>
+                        <li><a href="#">Mini-Bouquets</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>Browse Single-Flower Bouquets</li>
+            <li>Custom Order</li>
+        </ul>
+    </nav>
+    <!-- Modal Placeholders -->
+    <div id="cartModalDiv" class="modal fade"></div>
+    <div id="couponModalDiv" class="modal fade"></div>
+    <!--Mini-Bouquets-->
+    <section id="mini-bouquets">
+        <aside>
+            <img id="mug1" src="assets/images/mug2.jpg">
+            <img id="mug2" src="assets/images/mug1.png">
+            <img id="mug3" src="assets/images/mug3.png">
+        </aside>
+        <div>
+            <h2 id="newLabel">New!</h2>
+            <h2 id="miniLabel">Mini-Bouquets in a<br>mug!</h2>
+            <button id="mini-button" class="index-button">Shop Minis</button>
+        </div>
+    </section>
+    <!--Best Seller-->
+    <section id="best-section">
+        <h2 class="section-title">Best Sellers</h2>
+        <!--Contains the Items-->
+        <div id="best-row">
+            <div class="best-item">
+                <img class="btnimg white" src="assets/images/bouquet1.png"
+                    alt="A large bouquet with warm pastel colored flowers">
+                <button class="imgbutton" onclick="addItemToCart(0)">+</button>
+                <h3>Pastel Beauty</h3>
+                <p>$40</p>
+            </div>
+            <div class="best-item">
+                <img class="btnimg white" src="assets/images/bouquet2.png"
+                    alt="A small bouquet of mostly daisies with white, pink, mixed, and yellow colored flowers">
+                <button class="imgbutton" onclick="addItemToCart(1)">+</button>
+                <h3>Pale Beach</h3>
+                <p>$25</p>
+            </div>
+            <div class="best-item">
+                <img class="btnimg white" src="assets/images/bouquet3.png"
+                    alt="A large bouquet of pink roses of differing sizes">
+                <button class="imgbutton" onclick="addItemToCart(2)">+</button>
+                <h3>Multi-size Roses</h3>
+                <p>$40</p>
+            </div>
+        </div>
+        <button id="best-button" class="index-button">Shop Best Sellers</button>
+    </section>
+    <!--Gifts to Accompany-->
+    <section id="gifts-section">
+        <h2 class="section-title">Gifts to Accompany</h2>
+        <!--Contains the Items-->
+        <div id="gifts-row">
+            <div class="gifts-item">
+                <img class="btnimg white" src="./assets/images/chocolates.jpg" alt="A box of chocolates">
+                <button class="imgbutton" onclick="addItemToCart(3)">+</button>
+                <h3>Chocolates</h3>
+                <p>$18</p>
+            </div>
+            <div class="gifts-item">
+                <img class="btnimg white" src="./assets/images/bear.png" alt="A foam bear covered in red felt flowers">
+                <button class="imgbutton" onclick="addItemToCart(4)">+</button>
+                <h3>Teddy Bear</h3>
+                <p>$15</p>
+            </div>
+            <div class="gifts-item">
+                <img class="btnimg white" src="./assets/images/chocolatestrawberries.png"
+                    alt="A box of chocolate covered strawberries">
+                    <button class="imgbutton" onclick="addItemToCart(5)">+</button>
+                <h3>Chocolate Strawberries</h3>
+                <p>$10</p>
+            </div>
+            <div class="gifts-item">
+                <img class="btnimg white" src="./assets/images/card.png"
+                    alt="A white card that says, Your Message Here">
+                <button class="imgbutton" onclick="addItemToCart(6)">+</button>
+                <h3>Custom Card</h3>
+                <p>$1</p>
+            </div>
+            <div class="gifts-item">
+                <img class="btnimg white" src="./assets/images/flowerFood.png" alt="A paper packet of flower food">
+                <button class="imgbutton" onclick="addItemToCart(7)">+</button>
+                <h3>Flower Food</h3>
+                <p>$4</p>
+            </div>
+            <div class="gifts-item">
+                <img class="btnimg white" src="./assets/images/vase.png" alt="A marbled beige vase">
+                <button class="imgbutton" onclick="addItemToCart(8)">+</button>
+                <h3>Vase</h3>
+                <p>$50</p>
+            </div>
+        </div>
+        </div>
+        <button id="gifts-button" class="index-button">Shop Extras</button>
+    </section>
+
+    <!--Bootstrap Js and dependencies-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+/* this is the universal css - for stuff that more than just one html uses */
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url("../fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Poppins-Medium";
+    src: url("../fonts/Poppins-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Poppins-SemiBold";
+    src: url("../fonts/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "DeliusSwashCaps";
+    src: url("../fonts/DeliusSwashCaps-Regular.ttf");
+}
+
+h1, h2, h3, h4, p {
+    line-height: normal;
+}
